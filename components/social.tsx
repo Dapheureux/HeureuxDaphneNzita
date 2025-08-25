@@ -17,7 +17,7 @@ const socials=[
 
 const Social = ({containerStyles='', iconStyles=''}) => {
   return (
-    <div className={containerStyles}>
+    <div className={containerStyles + " flex items-center gap-4"}>
       {socials.map((item, index) => {
         return <Link key={index} href={item.path} className={iconStyles}>{item.icon}</Link>
       })}

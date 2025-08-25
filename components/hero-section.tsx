@@ -53,7 +53,7 @@ export function HeroSection() {
             </p>
           </div>
 
-          <div className="gap-4 mb-8 xl:mb-0 animate-scale-in" style={{ animationDelay: "1s" }}>
+          <div className="animate-scale-in" style={{ animationDelay: "1s" }}>
               <Social/>
           </div>
 

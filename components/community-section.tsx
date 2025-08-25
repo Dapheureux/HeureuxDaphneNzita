@@ -45,7 +45,7 @@ export function CommunitySection() {
           <h2 className="font-anton text-4xl md:text-6xl font-bold mb-6">COMMUNITY MANAGEMENT</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Création et animation de communautés engagées. Stratégies de contenu, gestion des réseaux sociaux et
-            développement de l'audience.
+            développement de l&apos;audience.
           </p>
         </div>
 

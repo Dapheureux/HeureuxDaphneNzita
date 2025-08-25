@@ -29,7 +29,7 @@ export function AboutSection() {
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-anton text-4xl md:text-6xl font-bold mb-6">À PROPOS</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Heureux Daphné N'ZITA, Diplomé en Génie Logiciel avec une solide formation en Développement Informatique, je suis spécialisé dans les technologies Web ...
+            Heureux Daphné N&apos;ZITA, Diplomé en Génie Logiciel avec une solide formation en Développement Informatique, je suis spécialisé dans les technologies Web ...
           </p>
         </div>
 

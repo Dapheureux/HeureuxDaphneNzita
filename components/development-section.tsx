@@ -30,7 +30,7 @@ export function DevelopmentSection() {
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-anton text-4xl md:text-6xl font-bold mb-6">DÉVELOPPEMENT</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Création d'applications web et mobile modernes, performantes et user-friendly. Expertise en React, Next.js,
+            Création d&apos;applications web et mobile modernes, performantes et user-friendly. Expertise en React, Next.js,
             Node.js et technologies cloud.
           </p>
         </div>

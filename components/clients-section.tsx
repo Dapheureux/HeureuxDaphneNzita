@@ -86,7 +86,7 @@ export function ClientsSection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="font-outfit text-lg text-muted-foreground">Et bien d{"'"}autres projets passionnants...</p>
+          <p className="font-outfit text-lg text-muted-foreground">Et bien d&apos;autres projets passionnants...</p>
         </motion.div>
       </div>
     </section>

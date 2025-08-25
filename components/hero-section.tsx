@@ -53,7 +53,7 @@ export function HeroSection() {
             </p>
           </div>
 
-          <div className="flex justify-center animate-scale-in" style={{ animationDelay: "1s" }}>
+          <div className="flex justify-center animate-scale-in mb-12" style={{ animationDelay: "1s" }}>
               <Social/>
           </div>
 

@@ -29,7 +29,9 @@ export function AboutSection() {
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-anton text-4xl md:text-6xl font-bold mb-6">À PROPOS</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Heureux Daphné N&apos;ZITA, Diplomé en Génie Logiciel avec une solide formation en Développement Informatique, je suis spécialisé dans les technologies Web ...
+            Passionné par la création sous toutes ses formes, je combine développement web, community management,
+              photographie et design pour créer des expériences digitales uniques. Mon approche multidisciplinaire me
+              permet d&apos;offrir une vision globale et créative à chaque projet.
           </p>
         </div>
 

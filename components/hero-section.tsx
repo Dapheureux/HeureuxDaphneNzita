@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Instagram } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Instagram, Link } from "lucide-react"
 
 export function HeroSection() {
   const [text, setText] = useState("")
-  const fullText = "Développeur • Community Manager • Photographe"
+  const fullText = "Développeur FullStack • Community Manager • Photographe"
 
   useEffect(() => {
     let index = 0
@@ -53,15 +53,21 @@ export function HeroSection() {
           </div>
 
           <div className="flex justify-center gap-4 mb-12 animate-scale-in" style={{ animationDelay: "1s" }}>
-            <Button variant="outline" size="icon" className="hover-lift bg-transparent">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="icon" className="hover-lift bg-transparent">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="icon" className="hover-lift bg-transparent">
-              <Instagram className="h-5 w-5" />
-            </Button>
+            <Link href="https://github.com/Dapheureux">
+              <Button variant="outline" size="icon" className="hover-lift bg-transparent">
+                <Github className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="https://www.linkedin.com/in/daphn%C3%A9heureuxnzita-7425b4223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Ba31e9kr9SjqHjsp%2FX08Y9g%3D%3D" target="_blank">
+              <Button variant="outline" size="icon" className="hover-lift bg-transparent">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Link>
+              <Button variant="outline" size="icon" className="hover-lift bg-transparent">
+                <Instagram className="h-5 w-5" />
+              </Button>
+            </Link>
           </div>
 
           <Button

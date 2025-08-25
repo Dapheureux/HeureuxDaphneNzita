@@ -10,9 +10,7 @@ export function IntroSection() {
           <div className="text-center">
             <h2 className="font-anton text-2xl md:text-3xl font-bold mb-4 text-foreground">QUI SUIS-JE ?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Passionné par la création sous toutes ses formes, je combine développement web, community management,
-              photographie et design pour créer des expériences digitales uniques. Mon approche multidisciplinaire me
-              permet d&apos;offrir une vision globale et créative à chaque projet.
+              Heureux Daphné N&apos;ZITA, Diplomé en Génie Logiciel avec une solide formation en Développement Informatique, je suis spécialisé dans les technologies Web ...
             </p>
           </div>
         </Card>

@@ -19,7 +19,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Heureux DAphné N'ZITA ",
+  title: "Heureux Daphné N'ZITA ",
   description: "Portfolio moderne présentant mes compétences en développement, community management et photographie",
 }
 

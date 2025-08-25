@@ -42,8 +42,8 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 text-center relative z-10 ml-20">
         <div className="animate-fade-in-up">
-          <h1 className="font-anton text-6xl md:text-8xl lg:text-9xl font-bold mb-6 glitch" data-text="PORTFOLIO">
-            PORTFOLIO
+          <h1 className="font-anton text-6xl md:text-8xl lg:text-9xl font-bold mb-6 glitch" data-text="DAPH N'ZITA">
+            DAPH N'ZITA
           </h1>
 
           <div className="h-16 mb-8">
@@ -53,7 +53,7 @@ export function HeroSection() {
             </p>
           </div>
 
-          <div className="animate-scale-in" style={{ animationDelay: "1s" }}>
+          <div className="flex justify-center animate-scale-in" style={{ animationDelay: "1s" }}>
               <Social/>
           </div>
 

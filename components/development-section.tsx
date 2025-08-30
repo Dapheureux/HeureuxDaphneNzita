@@ -22,7 +22,7 @@ interface Props {
   image: string
 }
 
-export function DevelopmentSection({title, description, tech, image}: Props) {
+export function DevelopmentSection() {
   const projects = [
     {
       title: "GMAO ESGAE",

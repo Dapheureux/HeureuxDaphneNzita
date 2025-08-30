@@ -59,7 +59,7 @@ export function HeroSection() {
 
           <Button
             size="lg"
-            className="animate-pulse-glow hover-lift"
+            className="animate-pulse-glow hover-lift flex justify-center"
             onClick={() => document.getElementById("apropos")?.scrollIntoView({ behavior: "smooth" })}
           >
             Découvrir mon travail
@@ -69,7 +69,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="flex justify-center absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-accent" />
       </div>
     </section>

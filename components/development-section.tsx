@@ -1,26 +1,58 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
+import { motion } from "framer-motion"
+import type { IconType } from "react-icons"
 
-export function DevelopmentSection() {
+
+// Import des icônes de React Icons
+import { FaReact, FaPhp, FaWordpress, FaJs, FaCss3Alt } from "react-icons/fa"
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiLaravel, SiPrestashop, } from "react-icons/si"
+import { DiMysql } from "react-icons/di"
+
+interface  Technology {
+  name: string
+  icon: IconType
+  color?: string
+}
+interface Props {
+  title: string
+  description: string
+  tech?: Technology[]
+  image: string
+}
+
+export function DevelopmentSection({title, description, tech, image}: Props) {
   const projects = [
     {
-      title: "Application E-commerce",
-      description: "Plateforme de vente en ligne complète avec panier, paiement et gestion des commandes",
-      tech: ["React", "Next.js", "Stripe", "PostgreSQL"],
-      image: "/modern-ecommerce-app.png",
+      title: "GMAO ESGAE",
+      description: "Système de Gestion de Maintenance Assistée par Ordinateur à ESGAE Projet de soutenance en Génie Logiciel",
+      tech: [
+      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "PHP", icon: FaPhp, color: "#777BB4" },
+      { name: "Laravel", icon: SiLaravel, color:"#E4080A"},
+      { name: "MySQL", icon: DiMysql, color: "#4479A1" },
+    ],
+      image: "/images/ImgProjets/gmao-esgae.png",
     },
     {
-      title: "Dashboard Analytics",
-      description: "Interface d'analyse de données avec graphiques interactifs et rapports en temps réel",
-      tech: ["Vue.js", "D3.js", "Node.js", "MongoDB"],
-      image: "/analytics-dashboard.png",
+      title: "LCD CASH",
+      description: "E-commerce spécialisé dans le rachat des écrans de téléphone et des matériels électroniques",
+      tech: [
+      { name: "Prestashop", icon: SiPrestashop, color: "#000000" },
+      { name: "MySQL", icon: DiMysql, color: "#4479A1" },
+    ],
+      image: "/images/ImgProjets/lcd-cash.png",
     },
     {
-      title: "App Mobile Social",
-      description: "Application mobile de réseau social avec chat en temps réel et partage de contenu",
-      tech: ["React Native", "Firebase", "Socket.io"],
-      image: "/social-media-app.png",
+      title: "UCARE",
+      description: "Site qui représente la structure de UCARE",
+      tech: [
+      { name: "WordPress", icon: FaWordpress, color: "#21759B" },
+      { name: "CSS", icon: FaCss3Alt, color: "#1572B6" },
+      { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
+    ],
+      image: "/images/ImgProjets/ucare.png",
     },
   ]
 
@@ -69,9 +101,14 @@ export function DevelopmentSection() {
               <CardContent>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span key={tech} className="px-2 py-1 bg-accent/10 text-accent text-sm rounded-md font-outfit">
-                      {tech}
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={tech.name + i}
+                      className="px-2 py-1 bg-accent/10 text-accent text-sm rounded-md font-outfit flex items-center gap-1"
+                      style={{ color: tech.color }}
+                    >
+                      <tech.icon />
+                      {tech.name}
                     </span>
                   ))}
                 </div>

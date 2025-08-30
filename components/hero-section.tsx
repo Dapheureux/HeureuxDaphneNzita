@@ -59,7 +59,7 @@ export function HeroSection() {
 
           <Button
             size="lg"
-            className="animate-pulse-glow hover-lift flex justify-center"
+            className="animate-pulse-glow hover-lift"
             onClick={() => document.getElementById("apropos")?.scrollIntoView({ behavior: "smooth" })}
           >
             Découvrir mon travail

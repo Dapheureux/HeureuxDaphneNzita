@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Anton, Outfit } from 'next/font/google'
+import { Anton } from "next/font/google"
+import { Outfit } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
@@ -12,7 +13,6 @@ const anton = Anton({
 })
 
 const outfit = Outfit({
-  weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-outfit",
@@ -29,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr"  suppressHydrationWarning>
-      <body className={`${anton.variable} ${outfit.variable}`}>
+    <html lang="fr" className={`${anton.variable} ${outfit.variable}`} suppressHydrationWarning>
+      <body className="font-outfit antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true} disableTransitionOnChange={false}>
           {children}
         </ThemeProvider>

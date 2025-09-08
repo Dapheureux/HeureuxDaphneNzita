@@ -5,65 +5,208 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Briefcase } from "lucide-react"
 
+// Import des icônes de React Icons
+import { FaReact, FaPhp, FaWordpress, FaJs, FaCss3Alt } from "react-icons/fa"
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiLaravel, SiTiktok, SiFacebook, SiMeta, SiInstagram, SiPrestashop} from "react-icons/si"
+import { DiMysql } from "react-icons/di"
+import type { IconType } from "react-icons"
+
+
+interface  technologies {
+  name: string
+  icon: IconType
+  color?: string
+}
+
 const experiences = [
   {
-    title: "Développeur Full-Stack Senior",
-    company: "TechInnovate Solutions",
-    location: "Paris, France",
-    period: "2022 - Présent",
-    type: "CDI",
+    title: "Développeur Full-Stack & Community Manager",
+    company: "𝗟𝗲 𝗟𝗲𝘃𝗲𝗹 -Agence Numérique",
+    location: "Congo Brazzaville",
+    period: "Aout 2025 - Présent",
+    type: "Freelance",
     description:
-      "Développement d'applications web modernes avec React, Next.js et Node.js. Gestion d'équipe de 5 développeurs et architecture de solutions scalables.",
-    technologies: ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "AWS"],
+      "Développement d'applications web modernes et la gestion de la communauté en ligne. Création de contenus engageants et gestion des réseaux sociaux pour augmenter la visibilité des clients.",
+    technologies: [
+      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "PHP", icon: FaPhp, color: "#777BB4" },
+      { name: "Laravel", icon: SiLaravel, color:"#E4080A"},
+      { name: "MySQL", icon: DiMysql, color: "#4479A1" },
+      { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
+      { name: "Facebook", icon: SiFacebook, color: "#1877F2" },
+      { name: "Meta", icon: SiMeta, color: "#1C1E21" },
+    ],
     achievements: [
       "Augmentation de 40% des performances des applications",
-      "Mise en place de l'architecture microservices",
-      "Formation et encadrement de l'équipe junior",
+      "Lancement de 10+ campagnes de médias sociaux réussies",
     ],
   },
   {
-    title: "Community Manager & Photographe",
-    company: "CreativeHub Agency",
-    location: "Lyon, France",
-    period: "2020 - 2022",
+    title: "Community Manager",
+    company: "Brazza Futuroscope",
+    location: "Congo Brazzaville",
+    period: "Juin 2025 - Present",
     type: "Freelance",
     description:
-      "Gestion des réseaux sociaux pour des marques lifestyle et tech. Création de contenus visuels et photographiques pour les campagnes marketing.",
-    technologies: ["Photoshop", "Lightroom", "Figma", "Instagram", "TikTok", "LinkedIn"],
+      "Gestion des réseaux sociaux Special Event Otaku et Gaming Congolaise (Brazza Futuroscope). Création de contenu visuel et rédactionnel pour engager la communauté et promouvoir les événements.",
+    technologies: [
+      { name: "Facebook", icon: SiFacebook, color: "#1877F2" },
+      { name: "Meta", icon: SiMeta, color: "#1C1E21" },
+      { name: "Instagram", icon: SiInstagram, color: "#E4405F" },
+    ],
     achievements: [
-      "Croissance de 300% de l'engagement sur les réseaux",
-      "Plus de 50 campagnes photographiques réalisées",
-      "Développement de stratégies de contenu viral",
+      "Croissance de 50% de la communauté en 6 mois",
+      "Augmentation de l'engagement de 35% grâce à des stratégies de contenu ciblées",
     ],
   },
   {
-    title: "Développeur Frontend",
-    company: "DigitalCraft Studio",
-    location: "Remote",
-    period: "2019 - 2020",
+    title: "Community Manager",
+    company: "KLAMM SHOP",
+    location: "Congo Brazzaville",
+    period: "Avril 2025 - Present",
     type: "CDI",
     description:
-      "Création d'interfaces utilisateur modernes et responsives. Collaboration étroite avec les designers UX/UI pour des expériences utilisateur optimales.",
-    technologies: ["Vue.js", "JavaScript", "SASS", "Webpack", "Git", "Figma"],
+      " Gestion des réseaux sociaux et des campagnes de marketing. Planification des contenus, analyse des performances et interaction avec la communauté en ligne pour les differents produits cosmetiques.",
+    technologies: [
+      { name: "Facebook", icon: SiFacebook, color: "#1877F2" },
+      { name: "Meta", icon: SiMeta, color: "#1C1E21" },
+      { name: "Instagram", icon: SiInstagram, color: "#E4405F" },
+      { name: "TikTok", icon: SiTiktok, color: "#000000" },
+    ],
     achievements: [
-      "Développement de 15+ sites web responsives",
-      "Réduction de 60% du temps de chargement",
-      "Mise en place des bonnes pratiques de développement",
+      "Augmentation de 30% des ventes en ligne grâce à des campagnes ciblées",
+      "Développement d'une stratégie de contenu qui a doublé l'engagement des utilisateurs",
+
     ],
   },
   {
-    title: "Photographe Événementiel",
-    company: "EventCapture Pro",
-    location: "Marseille, France",
-    period: "2018 - 2019",
-    type: "Freelance",
+    title: "Développeur chef de projet",
+    company: "Stream Inno",
+    location: "À distance",
+    period: "Juin 2023 - Aujourd’hui",
+    type: "Temps partiel",
     description:
-      "Photographie d'événements corporatifs, mariages et événements culturels. Post-production et livraison de contenus haute qualité.",
+      "Gestion de projets de développement web, rédaction de contenu, direction d’équipes techniques et accompagnement à la transformation digitale. Stream Inno est une agence numérique dédiée à l’innovation et à la sécurité numérique.",
+    technologies: [
+      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "Laravel", icon: SiLaravel, color: "#E4080A" },
+      { name: "Prestashop", icon: SiPrestashop, color: "#000000" },
+      { name: "PHP", icon: FaPhp, color: "#777BB4" },
+    ],
+    achievements: [
+      "Direction de plusieurs équipes de développement",
+      "Mise en place de solutions web et mobiles innovantes",
+      "Accompagnement de clients dans leur transformation digitale",
+    ],
+  },
+
+  {
+    title: "Co-fondateur",
+    company: "Stream Inno",
+    location: "34 Rue Mayam, Plateau de 15 ans · Hybride",
+    period: "Mars 2022 - Aujourd’hui",
+    type: "Hybride",
+    description:
+      "Co-fondateur d’une agence numérique spécialisée dans la création de sites web, d’applications mobiles et de stratégies de marketing digital. Revendeur officiel Bitdefender.",
+    technologies: [
+      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "Laravel", icon: SiLaravel, color: "#E4080A" },
+      { name: "Prestashop", icon: SiPrestashop, color: "#000000" },
+      { name: "PHP", icon: FaPhp, color: "#777BB4" },
+    ],
+    achievements: [
+      "Développement de l’agence et de son portefeuille clients",
+      "Mise en place de solutions de sécurité numérique",
+    ],
+  },
+
+  {
+    title: "Assistant caméraman et monteur vidéo",
+    company: "Communauté Arche de Vie Abondante",
+    location: "Congo Brazzaville",
+    period: "Fevrier 2022 - Present",
+    type: "Temps partiel",
+    description:
+      "Photographie d'événements corporatifs, mariages et événements de l'eglise. Post-production et livraison de contenus haute qualité.",
     technologies: ["Canon 5D", "Lightroom", "Photoshop", "Capture One"],
     achievements: [
       "Plus de 100 événements photographiés",
       "Taux de satisfaction client de 98%",
       "Développement d'un style photographique unique",
+    ],
+  },
+  {
+    title: "Community Manager",
+    company: "FONDATION LEZIE BIZIKI",
+    location: "Congo Brazzaville",
+    period: "Sept. 2023 - Janv. 2025",
+    type: "Temps partiel",
+    description:
+      "Gestion des réseaux sociaux et rédaction de contenu pour la fondation.",
+    technologies: [
+      { name: "Facebook", icon: SiFacebook, color: "#1877F2" },
+      { name: "Meta", icon: SiMeta, color: "#1C1E21" },
+    ],
+    achievements: [
+      "Développement de la communauté et de la visibilité de la fondation",
+    ],
+  },
+  {
+    title: "Développeur web front-end",
+    company: "Webtinix",
+    location: "Sur site",
+    period: "Août 2023 - Nov. 2023",
+    type: "Stage",
+    description:
+      "Développement front-end de sites web pour divers clients.",
+    technologies: [
+      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "CSS", icon: FaCss3Alt, color: "#1572B6" },
+      { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
+    ],
+    achievements: [
+      "Livraison de plusieurs sites web performants",
+    ],
+  },
+  {
+    title: "Assistant informatique",
+    company: "ONG ATDUR",
+    location: "Congo Brazzaville",
+    period: "Août 2024 - Déc. 2024",
+    type: "Stage",
+    description:
+      "Assistance informatique et gestion de projet au sein de l’ONG.",
+    technologies: [
+      { name: "Gestion de projet", icon: FaReact, color: "#61DAFB" }, // Remplacer par une icône adaptée si besoin
+    ],
+    achievements: [
+      "Participation à la gestion de projets associatifs",
+    ],
+  },
+  {
+    title: "Membre de l’ONG",
+    company: "ONG ATDUR",
+    location: "Congo Brazzaville",
+    period: "2020 - 2022",
+    type: "Bénévolat",
+    description:
+      "Participation aux activités et projets de l’ONG.",
+    technologies: [],
+    achievements: [
+      "Contribution à plusieurs projets sociaux",
+    ],
+  },
+  {
+    title: "Stagiaire",
+    company: "PARTNERS ASSURANCES S.A.R.L",
+    location: "Brazzaville, République du Congo",
+    period: "Juil. 2021 - Sept. 2021",
+    type: "Stage",
+    description:
+      "Stage en gestion administrative et informatique.",
+    technologies: [],
+    achievements: [
+      "Soutien administratif et technique à l’équipe",
     ],
   },
 ]
@@ -119,11 +262,25 @@ export function ExperienceSection() {
                     <div className="mb-4">
                       <h4 className="font-outfit font-semibold mb-2">Technologies utilisées :</h4>
                       <div className="flex flex-wrap gap-2">
-                        {exp.technologies.map((tech) => (
-                          <Badge key={tech} variant="outline" className="text-xs">
-                            {tech}
-                          </Badge>
-                        ))}
+                        {Array.isArray(exp.technologies)
+                          ? exp.technologies.map((tech, i) =>
+                              typeof tech === "string" ? (
+                                <Badge key={tech + i} variant="outline" className="text-xs">
+                                  {tech}
+                                </Badge>
+                              ) : (
+                                <Badge
+                                  key={tech.name + i}
+                                  variant="outline"
+                                  className="text-xs flex items-center gap-1"
+                                  style={{ color: tech.color }}
+                                >
+                                  <tech.icon className="inline-block" />
+                                  {tech.name}
+                                </Badge>
+                              )
+                            )
+                          : null}
                       </div>
                     </div>
 

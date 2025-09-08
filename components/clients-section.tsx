@@ -5,35 +5,65 @@ import { Card } from "@/components/ui/card"
 
 const clients = [
   {
-    name: "TechCorp",
+    name: "LCD CASH",
     logo: "/modern-tech-logo.png",
-    description: "Développement d'application web",
+    description: "Développement d'application web E-commerce",
   },
   {
-    name: "CreativeStudio",
+    name: "Fondation Lezie BIZIKI",
     logo: "/placeholder-kzfp8.png",
     description: "Community Management",
   },
   {
-    name: "StartupX",
+    name: "Communauté Arche de Vie Abondante",
     logo: "/startup-logo.png",
     description: "Photographie événementielle",
   },
   {
-    name: "DigitalAgency",
+    name: "KLAMM SHOP",
     logo: "/digital-marketing-agency-logo.png",
     description: "Développement full-stack",
   },
   {
-    name: "BrandCo",
+    name: "Le Level",
     logo: "/placeholder-s6ucc.png",
     description: "Stratégie digitale",
   },
   {
-    name: "InnovateInc",
+    name: "Webtinix",
     logo: "/innovation-company-logo.png",
     description: "Photographie produit",
   },
+
+  {
+    name: "UCARE",
+    logo: "/images/ImgProjets/ducare.png",
+    description: "Site vitrine",
+  },
+
+  {
+    name: "ESGAE",
+    logo: "/images/ImgProjets/dgmao-esgae.png",
+    description: "Site vitrine",
+  },
+
+  {
+    name: "Stream Inno",
+    logo: "/images/ImgProjets/dlcd-cash.png",
+    description: "Site vitrine",
+  },
+
+  {
+    name: "Admirable's",
+    logo: "/images/logoClient/Admirables.png",
+    description: "Projets variés dans différents secteurs",
+  },
+
+  {
+    name: "Brazza Futuroscope",
+    logo: "/placeholder.svg",
+    description: "Projets variés dans différents secteurs",
+  }
 ]
 
 export function ClientsSection() {

@@ -11,7 +11,7 @@ const clients = [
   },
   {
     name: "Fondation Lezie BIZIKI",
-    logo: "/placeholder-kzfp8.png",
+    logo: "/images/logoClient/lezieBiziki.jpeg",
     description: "Community Management",
   },
   {
@@ -26,12 +26,12 @@ const clients = [
   },
   {
     name: "Le Level",
-    logo: "/placeholder-s6ucc.png",
+    logo: "/images/logoClient/level.jpeg",
     description: "Stratégie digitale",
   },
   {
     name: "Webtinix",
-    logo: "/innovation-company-logo.png",
+    logo: "/images/logoClient/webtinix_logo.jpeg",
     description: "Photographie produit",
   },
 

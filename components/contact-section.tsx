@@ -34,19 +34,19 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@monportfolio.com",
-      href: "mailto:contact@monportfolio.com",
+      value: "contact@daphnenzita.cg",
+      href: "mailto:contact@daphnenzita.cg",
     },
     {
       icon: Phone,
       title: "Téléphone",
-      value: "+33 1 23 45 67 89",
-      href: "tel:+33123456789",
+      value: "+242 06 694 3958",
+      href: "tel:+242066943958",
     },
     {
       icon: MapPin,
       title: "Localisation",
-      value: "Paris, France",
+      value: "Brazzaville, Congo",
       href: "#",
     },
   ]

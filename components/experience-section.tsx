@@ -183,7 +183,7 @@ const experiences = [
     description:
       "Assistance informatique et gestion de projet au sein de l’ONG.",
     technologies: [
-      { name: "Gestion de projet", color: "#61DAFB" }, // Remplacer par une icône adaptée si besoin
+      { name: "Gestion de projet", icon: FaReact, color: "#61DAFB" }, // Remplacer par une icône adaptée si besoin
     ],
     achievements: [
       "Participation à la gestion de projets associatifs",

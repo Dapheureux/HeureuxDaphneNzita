@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Anton, Outfit } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css"
 
 const anton = Anton({
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={`${anton.variable} ${outfit.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true} disableTransitionOnChange={false}>
           {children}
+          <WhatsAppButton />
         </ThemeProvider>
       </body>
     </html>

@@ -7,7 +7,7 @@ import { Calendar, MapPin, Briefcase } from "lucide-react"
 
 // Import des icônes de React Icons
 import { FaReact, FaPhp, FaWordpress, FaJs, FaCss3Alt } from "react-icons/fa"
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiLaravel, SiTiktok, SiFacebook, SiMeta, SiInstagram, SiPrestashop} from "react-icons/si"
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiAdobepremierepro, SiLaravel, SiTiktok, SiFacebook, SiMeta, SiInstagram, SiPrestashop, SiAdobephotoshop, SiAdobeaftereffects, SiAdobelightroom} from "react-icons/si"
 import { DiMysql } from "react-icons/di"
 import type { IconType } from "react-icons"
 
@@ -128,7 +128,13 @@ const experiences = [
     type: "Temps partiel",
     description:
       "Photographie d'événements corporatifs, mariages et événements de l'eglise. Post-production et livraison de contenus haute qualité.",
-    technologies: ["Canon 5D", "Lightroom", "Photoshop", "Capture One"],
+    technologies: [
+      { name: "Adobe Premiere Pro", icon:SiAdobepremierepro, color: "#777BB4" },
+      { name: "Adobe After Effects", icon: SiAdobeaftereffects, color: "#777BB4" },
+      { name: "Adobe Lightroom", icon: SiAdobelightroom, color: "#777BB4" },
+      { name: "Adobe Photoshop", icon: SiAdobephotoshop, color: "#777BB4" },
+
+    ],
     achievements: [
       "Plus de 100 événements photographiés",
       "Taux de satisfaction client de 98%",
@@ -177,7 +183,7 @@ const experiences = [
     description:
       "Assistance informatique et gestion de projet au sein de l’ONG.",
     technologies: [
-      { name: "Gestion de projet", icon: FaReact, color: "#61DAFB" }, // Remplacer par une icône adaptée si besoin
+      { name: "Gestion de projet", color: "#61DAFB" }, // Remplacer par une icône adaptée si besoin
     ],
     achievements: [
       "Participation à la gestion de projets associatifs",

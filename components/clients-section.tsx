@@ -21,7 +21,7 @@ const clients = [
   },
   {
     name: "KLAMM SHOP",
-    logo: "/images/logoClient/klammShop.jng",
+    logo: "/images/logoClient/klammshop.jng",
     description: "Développement full-stack",
   },
   {
@@ -37,19 +37,19 @@ const clients = [
 
   {
     name: "UCARE",
-    logo: "/images/ImgProjets/ucare.jpg",
+    logo: "/images/logoClient/ucare.jpg",
     description: "Site vitrine",
   },
 
   {
     name: "ESGAE",
-    logo: "/images/ImgProjets/esgae.png",
+    logo: "/images/logoClient/esgae.png",
     description: "Etudiant en informatique",
   },
 
   {
     name: "Stream Inno",
-    logo: "/images/ImgProjets/streamInno.jpg",
+    logo: "/images/logoClient/streamInno.jpg",
     description: "Co-fondateur et CTO",
   },
 

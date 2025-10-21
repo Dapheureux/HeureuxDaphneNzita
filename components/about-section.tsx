@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Code, Users, Camera } from "lucide-react"
+import Image from "next/image"
 
 export function AboutSection() {
   const skills = [
@@ -62,7 +63,7 @@ export function AboutSection() {
             <div className="w-64 h-64 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center hover-lift">
               <Camera className="h-16 w-16 text-accent" />
               <div className="absolute inset-0 rounded-full bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white font-outfit">Votre Photo</span>
+                <Image src="/Daph.png" alt={""}></Image>
               </div>
             </div>
           </div>

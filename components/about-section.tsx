@@ -62,8 +62,9 @@ export function AboutSection() {
           <div className="relative group">
             <div className="w-64 h-64 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center hover-lift">
               <Camera className="h-16 w-16 text-accent" />
+              <Image src="/Daph.png" alt={"Daph"} className=""></Image>
               <div className="absolute inset-0 rounded-full bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Image src="/Daph.png" alt={""}></Image>
+                <span className="text-white font-outfit">Votre Photo</span>
               </div>
             </div>
           </div>

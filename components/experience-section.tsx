@@ -58,6 +58,11 @@ const experiences = [
       "Croissance de 50% de la communauté en 6 mois",
       "Augmentation de l'engagement de 35% grâce à des stratégies de contenu ciblées",
     ],
+    links: [
+      { name: "Facebook Page", url: "https://www.facebook.com/share/18CLnPVNv6/?mibextid=wwXIfr" },
+      { name: "Instagram", url: "https://www.instagram.com/brazza_futuroscope?igsh=MTV0dG5xZnRrdTZuaA==" },
+      { name: "TikTok", url: "https://www.tiktok.com/@brazzafuturoscope?_r=1&_t=ZS-941KdGjgibk" },
+    ],
   },
   {
     title: "Community Manager",
@@ -77,6 +82,11 @@ const experiences = [
       "Augmentation de 30% des ventes en ligne grâce à des campagnes ciblées",
       "Développement d'une stratégie de contenu qui a doublé l'engagement des utilisateurs",
 
+    ],
+    links: [
+      { name: "Facebook", icon: SiFacebook, color: "#1877F2", url: "https://facebook.com/klammshop" },
+      { name: "Instagram", icon: SiInstagram, url: "https://instagram.com/klammshop" },
+      { name: "TikTok", icon: SiTiktok, url: "https://tiktok.com/@klammshop" },
     ],
   },
   {
@@ -155,6 +165,10 @@ const experiences = [
     ],
     achievements: [
       "Développement de la communauté et de la visibilité de la fondation",
+    ],
+    links: [
+      { name: "Facebook Page", url: "https://facebook.com/fondationleziebiziki" },
+      { name: "LinkedIn", url: "https://www.linkedin.com/company/fondation-lezie-biziki/" },
     ],
   },
   {
@@ -301,6 +315,22 @@ export function ExperienceSection() {
                         ))}
                       </ul>
                     </div>
+
+                    {exp.links && exp.links.length > 0 && (
+                      <div>
+                        <h4 className="font-outfit font-semibold mb-2">Liens gérés :</h4>
+                        <ul className="space-y-1">
+                          {exp.links.map((link, i) => (
+                            <li key={i} className="font-outfit text-sm text-muted-foreground flex items-start gap-2">
+                              <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                              <a href={link.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                                {link.name}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               </Card>

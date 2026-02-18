@@ -64,7 +64,7 @@ export function AboutSection() {
               <Camera className="h-16 w-16 text-accent" />
               <Image src="/Daph.png" alt={"Daph"}   width={256} height={256} className="mb-3"></Image>
               <div className="absolute inset-0 rounded-full bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white font-outfit">Heureux Daphné N'ZITA</span>
+                <span className="text-white font-outfit">Heureux Daphné N&apos;ZITA</span>
               </div>
             </div>
           </div>

@@ -95,7 +95,7 @@ export function DevelopmentSection() {
   }
 
   return (
-    <section id="developpement" className="min-h-screen py-20 ml-20 bg-muted/30">
+    <section id="developpement" className="min-h-screen py-20 ml-0 md:ml-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-anton text-4xl md:text-6xl font-bold mb-6">

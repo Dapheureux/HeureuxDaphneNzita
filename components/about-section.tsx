@@ -25,7 +25,7 @@ export function AboutSection() {
   ]
 
   return (
-    <section id="apropos" className="min-h-screen py-20 ml-20">
+    <section id="apropos" className="min-h-screen py-20 ml-0 md:ml-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-anton text-4xl md:text-6xl font-bold mb-6">À PROPOS</h2>

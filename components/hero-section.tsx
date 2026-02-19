@@ -40,7 +40,7 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="container mx-auto px-4 text-center relative z-10 ml-20">
+      <div className="container mx-auto px-4 text-center relative z-10 ml-0 md:ml-20">
         <div className="animate-fade-in-up">
           <h1 className="font-anton text-6xl md:text-8xl lg:text-9xl font-bold mb-6 glitch" data-text="DAPH N'ZITA">
             DAPH N&apos;ZITA

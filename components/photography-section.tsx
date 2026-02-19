@@ -47,7 +47,7 @@ export function PhotographySection() {
   const filteredPhotos = activeFilter === "Tous" ? photos : photos.filter((photo) => photo.category === activeFilter)
 
   return (
-    <section id="photographie" className="min-h-screen py-20 ml-20">
+    <section id="photographie" className="min-h-screen py-20 ml-0 md:ml-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-anton text-4xl md:text-6xl font-bold mb-6">PHOTOGRAPHIE</h2>

@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card"
 
 export function IntroSection() {
   return (
-    <section className="py-16 ml-20">
+    <section className="py-16 ml-0 md:ml-20">
       <div className="container mx-auto px-4">
         <Card className="max-w-4xl mx-auto p-8 bg-card/50 backdrop-blur-sm border-border/50 hover-lift animate-fade-in-up">
           <div className="text-center">

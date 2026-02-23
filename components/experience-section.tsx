@@ -242,7 +242,7 @@ export function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl mb-6">EXPÉRIENCE PROFESSIONNELLE</h2>
+          <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl font-bold mb-6">EXPÉRIENCE PROFESSIONNELLE</h2>
           <p className="font-outfit text-lg text-muted-foreground max-w-2xl mx-auto">
             Mon parcours professionnel à travers différents domaines et technologies
           </p>

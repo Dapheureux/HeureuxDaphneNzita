@@ -61,7 +61,7 @@ const clients = [
 
   {
     name: "Brazza Futuroscope",
-    logo: "/placeholder.svg",
+    logo: "/images/logoClient/Brazza_futuroscope.jpg",
     description: "Projets variés dans différents secteurs",
   }
 ]
@@ -77,7 +77,7 @@ export function ClientsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl mb-6">ILS ME FONT CONFIANCE</h2>
+          <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl font-bold mb-6">ILS ME FONT CONFIANCE</h2>
           <p className="font-outfit text-lg text-muted-foreground max-w-2xl mx-auto">
             Découvrez les entreprises et marques qui ont choisi mes services pour leurs projets digitaux
           </p>

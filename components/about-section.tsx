@@ -75,7 +75,7 @@ export function AboutSection() {
               {/* Overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end pb-6">
                 <span className="text-white font-anton text-lg font-bold">Heureux Daphné</span>
-                <span className="text-white/80 font-outfit text-sm">N&apos;ZITA</span>
+                <span className="text-white/80 font-outfit font-bold text-sm">N&apos;ZITA</span>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const clients = [
   {
     name: "LCD CASH",
     logo: "/modern-tech-logo.png",
-    description: "Développement d'application web E-commerce",
+    description: "Développement",
   },
   {
     name: "Fondation Lezie BIZIKI",
@@ -17,28 +17,28 @@ const clients = [
   {
     name: "Communauté Arche de Vie Abondante",
     logo: "/startup-logo.png",
-    description: "Photographie événementielle",
+    description: "Graphiste et photographe",
   },
   {
     name: "KLAMM SHOP",
     logo: "/images/logoClient/klammshop.jng",
-    description: "Développement full-stack",
+    description: "Community Management",
   },
   {
     name: "Le Level",
     logo: "/images/logoClient/level.jpeg",
-    description: "Stratégie digitale",
+    description: "Developpement & Community Management",
   },
   {
     name: "Webtinix",
     logo: "/images/logoClient/webtinix_logo.jpeg",
-    description: "Photographie produit",
+    description: "Developpement",
   },
 
   {
     name: "UCARE",
     logo: "/images/logoClient/ucare.jpg",
-    description: "Site vitrine",
+    description: "Developpement ",
   },
 
   {
@@ -56,13 +56,13 @@ const clients = [
   {
     name: "Admirable's",
     logo: "/images/logoClient/Admirables.png",
-    description: "Projets variés dans différents secteurs",
+    description: "Graphiste et photographe",
   },
 
   {
     name: "Brazza Futuroscope",
     logo: "/images/logoClient/Brazza_futuroscope.jpg",
-    description: "Projets variés dans différents secteurs",
+    description: "Community Management",
   }
 ]
 

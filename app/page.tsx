@@ -12,7 +12,7 @@ import { HeroSection } from "@/components/hero-section"
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative pt-16 md:pt-0">
       <Navigation />
       <div className="overflow-x-hidden">
         <HeroSection />

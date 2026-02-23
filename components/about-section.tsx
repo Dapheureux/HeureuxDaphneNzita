@@ -57,14 +57,25 @@ export function AboutSection() {
           })}
         </div>
 
-        {/* Photo placeholder for personal image */}
+        {/* Professional image section */}
         <div className="flex justify-center animate-scale-in">
           <div className="relative group">
-            <div className="w-64 h-64 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center hover-lift">
-              <Camera className="h-16 w-16 text-accent" />
-              <Image src="/Daph.png" alt={"Daph"}   width={256} height={256} className="mb-3"></Image>
-              <div className="absolute inset-0 rounded-full bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white font-outfit">Heureux Daphné N&apos;ZITA</span>
+            {/* Background decorative circle */}
+            <div className="absolute inset-0 w-80 h-80 bg-gradient-to-br from-accent/30 to-accent/10 rounded-full blur-2xl -z-10 group-hover:from-accent/40 group-hover:to-accent/20 transition-all duration-500"></div>
+            
+            {/* Main image container */}
+            <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-accent/30 hover-lift shadow-2xl group-hover:border-accent/50 transition-all duration-300">
+              <Image 
+                src="/Daph.png" 
+                alt="Heureux Daphné N'ZITA" 
+                width={288} 
+                height={288} 
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-end pb-6">
+                <span className="text-white font-anton text-lg font-bold">Heureux Daphné</span>
+                <span className="text-white/80 font-outfit text-sm">N&apos;ZITA</span>
               </div>
             </div>
           </div>

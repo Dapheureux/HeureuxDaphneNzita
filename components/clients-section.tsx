@@ -2,11 +2,12 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
+import { MediaPlaceholder } from "@/components/media-placeholder"
 
 const clients = [
   {
     name: "LCD CASH",
-    logo: "/modern-tech-logo.png",
+    logo: null,
     description: "Développement",
   },
   {
@@ -16,12 +17,12 @@ const clients = [
   },
   {
     name: "Communauté Arche de Vie Abondante",
-    logo: "/startup-logo.png",
+    logo: null,
     description: "Graphiste et photographe",
   },
   {
     name: "KLAMM SHOP",
-    logo: "/images/logoClient/klammshop.jng",
+    logo: "/images/logoClient/klammshop.png",
     description: "Community Management",
   },
   {
@@ -95,11 +96,19 @@ export function ClientsSection() {
               <Card className="p-8 hover-lift group cursor-pointer border-2 hover:border-primary transition-all duration-300">
                 <div className="text-center">
                   <div className="mb-4 overflow-hidden rounded-lg">
-                    <img
-                      src={client.logo || "/placeholder.svg"}
-                      alt={`Logo ${client.name}`}
-                      className="w-full h-20 object-contain group-hover:scale-110 transition-transform duration-300"
-                    />
+                    {client.logo ? (
+                      <img
+                        src={client.logo}
+                        alt={`Logo ${client.name}`}
+                        className="w-full h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : (
+                      <MediaPlaceholder
+                        label={client.name}
+                        description="Logo indisponible"
+                        className="h-20"
+                      />
+                    )}
                   </div>
                   <h3 className="font-anton text-xl mb-2">{client.name}</h3>
                   <p className="font-outfit text-sm text-muted-foreground">{client.description}</p>

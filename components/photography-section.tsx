@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { X, ZoomIn } from "lucide-react"
+import { MediaPlaceholder } from "@/components/media-placeholder"
 
 export function PhotographySection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -11,32 +12,32 @@ export function PhotographySection() {
 
   const photos = [
     {
-      src: "/professional-portrait.png",
+      src: null,
       alt: "Portrait professionnel",
       category: "Portrait",
     },
     {
-      src: "/mountain-landscape.png",
+      src: null,
       alt: "Paysage montagneux",
       category: "Paysage",
     },
     {
-      src: "/urban-street-scene.png",
+      src: null,
       alt: "Photographie urbaine",
       category: "Street",
     },
     {
-      src: "/wedding-photography.png",
+      src: null,
       alt: "Photographie d'événement",
       category: "Événement",
     },
     {
-      src: "/wildlife-nature-photography.png",
+      src: null,
       alt: "Photographie nature",
       category: "Nature",
     },
     {
-      src: "/modern-building-architecture.png",
+      src: null,
       alt: "Architecture moderne",
       category: "Architecture",
     },
@@ -75,21 +76,33 @@ export function PhotographySection() {
           {filteredPhotos.map((photo, index) => (
             <Card
               key={index}
-              className="photo-item relative overflow-hidden hover-lift animate-fade-in-up cursor-pointer"
+              className={`photo-item relative overflow-hidden hover-lift animate-fade-in-up ${
+                photo.src ? "cursor-pointer" : ""
+              }`}
               style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => setSelectedImage(photo.src)}
+              onClick={photo.src ? () => setSelectedImage(photo.src) : undefined}
             >
-              <img
-                src={photo.src || "/placeholder.svg"}
-                alt={photo.alt}
-                className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
-              />
-              <div className="photo-overlay">
-                <div className="text-center text-white">
-                  <ZoomIn className="h-8 w-8 mb-2 mx-auto" />
-                  <p className="font-outfit font-semibold">{photo.category}</p>
-                </div>
-              </div>
+              {photo.src ? (
+                <>
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="photo-overlay">
+                    <div className="text-center text-white">
+                      <ZoomIn className="h-8 w-8 mb-2 mx-auto" />
+                      <p className="font-outfit font-semibold">{photo.category}</p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <MediaPlaceholder
+                  label={photo.alt}
+                  description={`${photo.category} — visuel indisponible`}
+                  className="h-64"
+                />
+              )}
             </Card>
           ))}
         </div>
@@ -107,7 +120,7 @@ export function PhotographySection() {
                 <X className="h-6 w-6" />
               </Button>
               <img
-                src={selectedImage || "/placeholder.svg"}
+                src={selectedImage}
                 alt="Photo agrandie"
                 className="max-w-full max-h-full object-contain animate-scale-in"
               />

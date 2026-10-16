@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Card } from "@/components/ui/card"
+import { MediaPlaceholder } from "@/components/media-placeholder"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { X, ZoomIn, Palette, Layers, Smartphone } from "lucide-react"
@@ -12,42 +13,42 @@ export function DesignSection() {
 
   const designs = [
     {
-      src: "/ui-design-mockup.png",
+      src: null,
       alt: "Interface utilisateur moderne",
       category: "UI/UX",
       title: "Application Mobile",
       description: "Design d&apos;interface pour application de productivité",
     },
     {
-      src: "/brand-identity-design.png",
+      src: null,
       alt: "Identité visuelle complète",
       category: "Branding",
       title: "Identité Visuelle",
       description: "Création d&apos;identité complète pour startup tech",
     },
     {
-      src: "/web-design-layout.png",
+      src: null,
       alt: "Design de site web responsive",
       category: "Web Design",
       title: "Site E-commerce",
       description: "Design responsive pour plateforme de vente en ligne",
     },
     {
-      src: "/logo-design-collection.png",
+      src: null,
       alt: "Collection de logos créatifs",
       category: "Logo",
       title: "Collection Logos",
       description: "Série de logos pour différents secteurs d&apos;activité",
     },
     {
-      src: "/print-design-poster.png",
+      src: null,
       alt: "Design d&apos;affiche événementielle",
       category: "Print",
       title: "Affiche Événement",
       description: "Design d&apos;affiche pour festival de musique",
     },
     {
-      src: "/app-interface-design.png",
+      src: null,
       alt: "Interface d&apos;application web",
       category: "UI/UX",
       title: "Dashboard Analytics",
@@ -90,22 +91,34 @@ export function DesignSection() {
           {filteredDesigns.map((design, index) => (
             <Card
               key={index}
-              className="design-item relative overflow-hidden hover-lift animate-fade-in-up cursor-pointer group"
+              className={`design-item relative overflow-hidden hover-lift animate-fade-in-up ${
+                design.src ? "cursor-pointer group" : ""
+              }`}
               style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => setSelectedImage(design.src)}
+              onClick={design.src ? () => setSelectedImage(design.src) : undefined}
             >
               <div className="relative">
-                <img
-                  src={design.src || "/placeholder.svg?height=300&width=400&query=modern design mockup"}
-                  alt={design.alt}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <ZoomIn className="h-8 w-8 mb-2 mx-auto" />
-                    <p className="font-outfit font-semibold">Voir le projet</p>
-                  </div>
-                </div>
+                {design.src ? (
+                  <>
+                    <img
+                      src={design.src}
+                      alt={design.alt}
+                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="text-center text-white">
+                        <ZoomIn className="h-8 w-8 mb-2 mx-auto" />
+                        <p className="font-outfit font-semibold">Voir le projet</p>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <MediaPlaceholder
+                    label={design.title}
+                    description={`${design.category} — visuel indisponible`}
+                    className="h-64"
+                  />
+                )}
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
@@ -131,7 +144,7 @@ export function DesignSection() {
                 <X className="h-6 w-6" />
               </Button>
               <img
-                src={selectedImage || "/placeholder.svg"}
+                src={selectedImage}
                 alt="Design agrandi"
                 className="max-w-full max-h-full object-contain animate-scale-in"
               />
